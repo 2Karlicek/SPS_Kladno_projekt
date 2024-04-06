@@ -26,7 +26,41 @@
     </form>
   </div>
   
+  <?php
+    if (isset($_POST["submit"])) {
+          $servername = "localhost";
+          $username = "root";
+          $password = "";
+          $dbname = "login";
 
+          $conn = new mysqli($servername, $username, $password, $dbname);
+
+
+          $username2 = $_POST['username'];
+          $password2 = $_POST['password'];
+
+          // Ověření uživatelského jména a hesla v databázi
+          $sql = "SELECT * FROM uzivatele WHERE username='$username2' AND heslo='$password2'";
+          $result = $conn->query($sql);
+          
+
+
+          if ($result->num_rows > 0) {
+              // Přihlášení úspěšné, přesměrování na domovskou stránku
+              // header("Location: home.php");
+              echo "dobře";
+          } else {
+              // Přihlášení selhalo, zobrazení chybové zprávy
+              echo "Nesprávné uživatelské jméno nebo heslo.";
+          }
+
+          $conn->close();
+
+    }
+
+
+
+  ?>
 
 
 </body>

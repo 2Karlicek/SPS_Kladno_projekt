@@ -10,9 +10,11 @@
 <body>
 
 <div class="container">
-    <h2>Registrační formulář</h2>
+    <h2>Volební kalkulačka</h2>
     <form action="election_calculator.php" method="post" class="myform">
+    
     <div class="form-group">
+    <h3>Jste pro setrvání v prohnilé EU</h3>
     <div class="otazky" style="text-align: center;">
         <label><input type="radio" name="EU" value="ano" required> Ano</label>
         <label><input type="radio" name="EU" value="ne" required> Ne</label>
@@ -21,6 +23,7 @@
     </div>
 
     <div class="form-group">
+    <h3>Jste pro setrvání v NATO</h3>
         <div class="otazky" style="text-align: center;">
             <label><input type="radio" name="NATO" value="ano" required> Ano</label>
             <label><input type="radio" name="NATO" value="ne" required> Ne</label>
@@ -29,6 +32,7 @@
     </div>
 
     <div class="form-group">
+    <h3>Jste pro navýšení důchodu nad rámec valorizace</h3>
         <div class="otazky" style="text-align: center;">
             <label><input type="radio" name="duchod" value="ano" required> Ano</label>
             <label><input type="radio" name="duchod" value="ne" required> Ne</label>
@@ -37,6 +41,7 @@
     </div>
 
     <div class="form-group">
+    <h3>Jste pro důchodovou reformu</h3>
         <div class="otazky" style="text-align: center;">
             <label><input type="radio" name="duchod_reforma" value="ano" required> Ano</label>
             <label><input type="radio" name="duchod_reforma" value="ne" required> Ne</label>
@@ -45,6 +50,7 @@
     </div>
 
     <div class="form-group">
+    <h3>Jste pro zvýšení věku odchodu do důchodu</h3>
         <div class="otazky" style="text-align: center;">
             <label><input type="radio" name="zvyseni_odchod_do_duchodu" value="ano" required> Ano</label>
             <label><input type="radio" name="zvyseni_odchod_do_duchodu" value="ne" required> Ne</label>
@@ -53,6 +59,7 @@
     </div>
 
     <div class="form-group">
+    <h3>Jste pro prává lgbt</h3>
         <div class="otazky" style="text-align: center;">
             <label><input type="radio" name="lgbt" value="ano" required> Ano</label>
             <label><input type="radio" name="lgbt" value="ne" required> Ne</label>
@@ -61,6 +68,7 @@
     </div>
 
     <div class="form-group">
+    <h3>Jste pro greendeal</h3>
         <div class="otazky" style="text-align: center;">
             <label><input type="radio" name="greendeal" value="ano" required> Ano</label>
             <label><input type="radio" name="greendeal" value="ne" required> Ne</label>
@@ -69,6 +77,7 @@
     </div>
 
     <div class="form-group">
+    <h3>Jste pro zpoplatnení VŠ</h3>
         <div class="otazky" style="text-align: center;">
             <label><input type="radio" name="zpoplatneni_vs" value="ano" required> Ano</label>
             <label><input type="radio" name="zpoplatneni_vs" value="ne" required> Ne</label>
@@ -77,6 +86,7 @@
     </div>
 
     <div class="form-group">
+    <h3>Jste pro spolupráci V4</h3>
         <div class="otazky" style="text-align: center;">
             <label><input type="radio" name="V4" value="ano" required> Ano</label>
             <label><input type="radio" name="V4" value="ne" required> Ne</label>
@@ -190,7 +200,8 @@
         // Vytvořit politiky
         $Babis = new Politik("babiš", "Ano", 60, new Otazky("ano", "ano", "ano", "ne", "ne", "ne", "ne", "ne", "ano"));
         $Okamura = new Politik("tomio", "SPD", 40, new Otazky("ne", "ne", "ano", "ne", "ne", "ne", "ne", "ne", "ano"));
-        $seznam = [$Babis, $Okamura];
+        $Bartos = new Politik("Bartoš", "Piráti", 40, new Otazky("ano", "ano", "ne", "ano", "ano", "ano", "ano", "ne", "ne"));
+        $seznam = [$Babis, $Okamura, $Bartos];
         
         // Vytvořit instanci člověka
         $clovek_A = new Clovek("jirka", 40, new Otazky($otazka1, $otazka2, $otazka3, $otazka4, $otazka5, $otazka6, $otazka7, $otazka8, $otazka9));

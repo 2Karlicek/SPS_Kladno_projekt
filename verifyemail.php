@@ -41,11 +41,24 @@
                 $code = $_POST["digit1"] . $_POST["digit2"] . $_POST["digit3"] . $_POST["digit4"] . $_POST["digit5"] . $_POST["digit6"];
                 echo $code;
                 if ($code == $_SESSION["code"]){
-                    
-                        $servername = "localhost";
-                        $username = "root";
-                        $password = "";
-                        $dbname = "login";
+                        try{
+                            $servername = "dbs.spskladno.cz";
+                            $username = "student12";
+                            $password = "spsnet";
+                            $dbname = "vyuka12";
+                            $tabulka = "ucastnici";
+                            $conn = new mysqli($servername, $username, $password, $dbname);
+                        }
+                        catch(Exception $e){
+                            $servername = "localhost";
+                            $username = "root";
+                            $password = "";
+                            $dbname = "logins";
+                            $tabulka = "uzivatele";
+
+                            $conn = new mysqli($servername, $username, $password, $dbname);
+                        }
+                        
                         
                         $uzivatelske_jmeno = $_SESSION["username"];
                         $heslo = $_SESSION["password"];
@@ -55,8 +68,8 @@
                         $isadmin = 0;
 
 
-                        $conn = new mysqli($servername, $username, $password, $dbname);
-                        $query = "INSERT INTO uzivatele(username, email ,heslo, gender, bydliste, isadmin) VALUES('$uzivatelske_jmeno','$email', '$heslo', '$pohlavi', '$bydliste' , '$isadmin')";
+                        
+                        $query = "INSERT INTO $tabulka(username, email ,heslo, gender, bydliste, isadmin) VALUES('$uzivatelske_jmeno','$email', '$heslo', '$pohlavi', '$bydliste' , '$isadmin')";
             
                         $result = mysqli_query($conn, $query);
                         echo "super";

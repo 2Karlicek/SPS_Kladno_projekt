@@ -31,12 +31,24 @@ session_start()
   
   <?php
     if (isset($_POST["submit"])) {
+
+          try {
           $servername = "localhost";
           $username = "root";
           $password = "";
-          $dbname = "login";
+          $dbname = "logins";
 
           $conn = new mysqli($servername, $username, $password, $dbname);
+          }catch(Exception $e){
+            $servername = "localhost";
+            $username = "root";
+            $password = "";
+            $dbname = "logins";
+
+            $conn = new mysqli($servername, $username, $password, $dbname);
+          }
+
+          
 
 
           $username2 = $_POST['username'];

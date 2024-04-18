@@ -1,3 +1,50 @@
+
+<?php
+// Definuj pole se stránkami, obrázky a odkazy
+$stranky = array(
+    array("nazev" => "ANO", "obrazek" => "./assets/icons/xd.svg", "odkaz" => "ano.php"),
+    array("nazev" => "SPD", "obrazek" => "./assets/icons/ae.svg", "odkaz" => "spd.php"),
+    array("nazev" => "ODS", "obrazek" => "./assets/icons/indesign.svg", "odkaz" => "ods.php"),
+    array("nazev" => "Pirati", "obrazek" => "./assets/icons/figma.svg", "odkaz" => "pirati.php"),
+    array("nazev" => "KSČM", "obrazek" => "./assets/icons/xd.svg", "odkaz" => "kscm.php"),
+    array("nazev" => "KDU-ČSL", "obrazek" => "./assets/icons/ae.svg", "odkaz" => "kducsl.php"),
+    // Další stránky
+);
+
+$volby = array(
+  array("text" => "Do senátu", "odkaz" => "electioncalculator.php", "datum" =>new DateTime('2024-04-01')),
+  array("text" => "Do poslanecké sněmovny", "odkaz" => "electioncalculator.php","datum" =>new DateTime('2026-06-01')),
+  array("text" => "Do Kraje", "odkaz" => "electioncalculator.php","datum" =>new DateTime('2026-06-01')),
+  array("text" => "Prezidentské", "odkaz" => "electioncalculator.php","datum" =>new DateTime('2028-06-01')),
+  array("text" => "Komunální", "odkaz" => "electioncalculator.php", "datum" =>new DateTime('2025-06-01')),
+  array("text" => "Do Europarlamentu", "odkaz" => "electioncalculator.php", "datum" =>new DateTime('2027-06-01')),
+);
+$timenow = new DateTime();
+$actual = array();
+
+echo $volby[0]["datum"]->format('Y-m-d');
+echo"<br>";
+echo $timenow->format('Y-m-d');
+echo"<br>";
+
+
+foreach ($volby as $vol){
+  $rozdil = $vol["datum"]->diff($timenow);
+  $pocet_mesicu = ($rozdil->y * 12) + $rozdil->m;
+  if ($pocet_mesicu < 6) {
+    array_push($actual, $vol);
+  } else {
+      echo "neni";
+  }
+}
+// Porovnej, zda je rozdíl menší než 1 měsíc
+
+?>
+
+
+
+
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -17,7 +64,7 @@
         <div class="nav-start">
           <a class="logo" href="/">
             <img
-              src="/assets/images/logo.png"
+              src="assets/images/logo.png"
               width="35"
               height="35"
               alt="Inc Logo"
@@ -33,48 +80,48 @@
                   aria-expanded="false"
                   aria-label="browse"
                 >
-                  Browse
+                  Politici
                   <i class="bx bx-chevron-down" aria-hidden="true"></i>
                 </button>
                 <div id="dropdown1" class="dropdown">
                   <ul role="menu">
                     <li role="menuitem">
                       <a class="dropdown-link" href="#best-of-the-day">
-                        <img src="./assets/icons/botd.svg" class="icon" />
+                        <img src="./assets/icons/babis_icon.jpg" class="icon" />
                         <div>
                           <span class="dropdown-link-title"
-                            >Best of the day</span
+                            >Andrej Babiš</span
                           >
-                          <p>Shorts featured today by curators</p>
+                          <p>Zjistěte víc o Andrej Babiš</p>
                         </div>
                       </a>
                     </li>
                     <li role="menuitem">
                       <a class="dropdown-link" href="#featured-streams">
-                        <img src="./assets/icons/fs.svg" class="icon" />
+                        <img src="./assets/icons/okamura_icon.jpg" class="icon" />
                         <div>
                           <span class="dropdown-link-title"
-                            >Featured Streams</span
+                            >Tomio Okamura</span
                           >
-                          <p>Leading creatives livestreams</p>
+                          <p>Zjistěte víc o Tomio Okamura</p>
                         </div>
                       </a>
                     </li>
                     <li role="menuitem">
                       <a class="dropdown-link" href="#subscriptions">
-                        <img src="./assets/icons/sp.svg" class="icon" />
+                        <img src="./assets/icons/fiala_icon.jpg" class="icon" />
                         <div>
-                          <span class="dropdown-link-title">Subscriptions</span>
-                          <p>Gain exclusive access</p>
+                          <span class="dropdown-link-title">Petr Fiala</span>
+                          <p>Zjistěte víc o Petr Fiala</p>
                         </div>
                       </a>
                     </li>
                     <li role="menuitem">
                       <a class="dropdown-link" href="#creative-feed">
-                        <img src="./assets/icons/cf.svg" class="icon" />
+                        <img src="./assets/icons/bartos_icon.jpg" class="icon" />
                         <div>
-                          <span class="dropdown-link-title">Creative Feed</span>
-                          <p>See trending creations</p>
+                          <span class="dropdown-link-title">Ivan Bartoš</span>
+                          <p>Zjistěte víc o Ivan Bartoš</p>
                         </div>
                       </a>
                     </li>
@@ -82,38 +129,18 @@
 
                   <ul role="menu">
                     <li class="dropdown-title">
-                      <span class="dropdown-link-title">Browse by apps</span>
+                      <span class="dropdown-link-title">Politické strany</span>
                     </li>
-                    <li role="menuitem">
-                      <a class="dropdown-link" href="#adobe-xd">
-                        <img src="./assets/icons/xd.svg" />
-                        Adobe XD
-                      </a>
-                    </li>
-                    <li role="menuitem">
-                      <a class="dropdown-link" href="#after-effect">
-                        <img src="./assets/icons/ae.svg" />
-                        After Effect
-                      </a>
-                    </li>
-                    <li role="menuitem">
-                      <a class="dropdown-link" href="#sketch">
-                        <img src="./assets/icons/sketch.svg" />
-                        Sketch
-                      </a>
-                    </li>
-                    <li role="menuitem">
-                      <a class="dropdown-link" href="#indesign">
-                        <img src="./assets/icons/indesign.svg" />
-                        Indesign
-                      </a>
-                    </li>
-                    <li role="menuitem">
-                      <a class="dropdown-link" href="#figma">
-                        <img src="./assets/icons/figma.svg" />
-                        Figma
-                      </a>
-                    </li>
+                    <?php foreach ($stranky as $stranka): ?>
+                        <li role="menuitem">
+                            <a class="dropdown-link" href="<?php echo $stranka['odkaz']; ?>">
+                                <img src="<?php echo $stranka['obrazek']; ?>" />
+                                <?php echo $stranka['nazev']; ?>
+                            </a>
+                        </li>
+                    <?php endforeach; ?>
+                   
+
                   </ul>
                 </div>
               </li>
@@ -125,35 +152,28 @@
                   aria-expanded="false"
                   aria-label="discover"
                 >
-                  Discover
+                  Volby
                   <i class="bx bx-chevron-down" aria-hidden="true"></i>
                 </button>
                 <div id="dropdown2" class="dropdown">
                   <ul role="menu">
                     <li>
-                      <span class="dropdown-link-title">Browse Categories</span>
+                      <span class="dropdown-link-title">Aktuální</span>
                     </li>
-                    <li role="menuitem">
-                      <a class="dropdown-link" href="#branding">Branding</a>
-                    </li>
-                    <li role="menuitem">
-                      <a class="dropdown-link" href="#illustrations"
-                        >Illustration</a
-                      >
-                    </li>
-                  </ul>
-                  <ul role="menu">
+                    <?php foreach ($actual as $actuality): ?>
+                        <li role="menuitem">
+                        <a class="dropdown-link" href=<?php echo $actuality['odkaz'];?>> <?php echo $actuality['text'];  ?></a>
+                        </li>
+                    <?php endforeach; ?>
                     <li>
-                      <span class="dropdown-link-title">Download App</span>
+                      <span class="dropdown-link-title">V ČR</span>
                     </li>
-                    <li role="menuitem">
-                      <a class="dropdown-link" href="#mac-windows"
-                        >MacOS & Windows</a
-                      >
-                    </li>
-                    <li role="menuitem">
-                      <a class="dropdown-link" href="#linux">Linux</a>
-                    </li>
+                    <?php foreach ($volby as $volba): ?>
+                        <li role="menuitem">
+                        <a class="dropdown-link" href=<?php echo $volba['odkaz'];?>> <?php echo $volba['text'];  ?></a>
+                        </li>
+                    <?php endforeach; ?>
+                    
                   </ul>
                 </div>
               </li>

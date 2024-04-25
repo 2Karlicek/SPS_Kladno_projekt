@@ -1,4 +1,9 @@
+<?php
+session_start();
 
+
+
+?>
 <!DOCTYPE html>
 <html lang="cs">
 <head>
@@ -93,6 +98,64 @@
             <label><input type="radio" name="V4" value="nevím" required> Nevím</label><br>
         </div>
     </div>
+
+    <div class="form-group">
+    <h3>Jste pro elektromobily</h3>
+        <div class="otazky" style="text-align: center;">
+            <label><input type="radio" name="auto" value="ano" required> Ano</label>
+            <label><input type="radio" name="auto" value="ne" required> Ne</label>
+            <label><input type="radio" name="auto" value="nevím" required> Nevím</label><br>
+        </div>
+    </div>
+
+    <div class="form-group">
+    <h3>Jste pro hlubší spolupráci s Ruskem</h3>
+        <div class="otazky" style="text-align: center;">
+            <label><input type="radio" name="rusko" value="ano" required> Ano</label>
+            <label><input type="radio" name="rusko" value="ne" required> Ne</label>
+            <label><input type="radio" name="rusko" value="nevím" required> Nevím</label><br>
+        </div>
+    </div>
+    <div class="form-group">
+    <h3>Jste pro přijímání migrantů z Ukrajiny</h3>
+        <div class="otazky" style="text-align: center;">
+            <label><input type="radio" name="ukrajina" value="ano" required> Ano</label>
+            <label><input type="radio" name="ukrajina" value="ne" required> Ne</label>
+            <label><input type="radio" name="ukrajina" value="nevím" required> Nevím</label><br>
+        </div>
+    </div>
+    <div class="form-group">
+    <h3>Jste pro přijímání migrantů z Blízkého východu</h3>
+        <div class="otazky" style="text-align: center;">
+            <label><input type="radio" name="migranti" value="ano" required> Ano</label>
+            <label><input type="radio" name="migranti" value="ne" required> Ne</label>
+            <label><input type="radio" name="migranti" value="nevím" required> Nevím</label><br>
+        </div>
+    </div>
+    <div class="form-group">
+    <h3>Jste spokojeni s prezidentem Petrem Pavlem</h3>
+        <div class="otazky" style="text-align: center;">
+            <label><input type="radio" name="prezident" value="ano" required> Ano</label>
+            <label><input type="radio" name="prezident" value="ne" required> Ne</label>
+            <label><input type="radio" name="prezident" value="nevím" required> Nevím</label><br>
+        </div>
+    </div>
+    <div class="form-group">
+    <h3>Myslíte si, že za socialismu bylo lépe</h3>
+        <div class="otazky" style="text-align: center;">
+            <label><input type="radio" name="socialismus" value="ano" required> Ano</label>
+            <label><input type="radio" name="socialismus" value="ne" required> Ne</label>
+            <label><input type="radio" name="socialismus" value="nevím" required> Nevím</label><br>
+        </div>
+    </div>
+    <div class="form-group">
+    <h3>Bude za Okamury ještě líp</h3>
+        <div class="otazky" style="text-align: center;">
+            <label><input type="radio" name="okamura" value="ano" required> Ano</label>
+            <label><input type="radio" name="okamura" value="ne" required> Ne</label>
+            <label><input type="radio" name="okamura" value="nevím" required> Nevím</label><br>
+        </div>
+    </div>
     <button type="submit" name="submit">Odeslat</button>
 </form>
 </div>
@@ -159,7 +222,7 @@
             public function porovnat_s_politikem2($seznam) {
                 $vysledek = [];
                 foreach ($seznam as $politik) {
-                    $vysledek[$politik->jmeno] = $this->porovnat_s_politikem($politik);
+                    $vysledek[$politik->strana] = $this->porovnat_s_politikem($politik);
                 }
                 $maximum = max($vysledek);
                 
@@ -167,6 +230,10 @@
                     if ($hodnota == $maximum) {
                         echo $hodnota . "<br>";
                         echo $jmeno;
+                        echo "<br>";
+                        $_SESSION['vysledek'] = $jmeno;
+                        
+                        echo "<script>setTimeout(function(){ window.location.href = 'vysledek.php'; }, 3000);</script>";
                     }
                 }
             }
@@ -187,6 +254,8 @@
         }
         
         // Přijmout odpovědi od uživatele
+
+    
         $otazka1 = $_POST["EU"];
         $otazka2 = $_POST["NATO"];
         $otazka3 = $_POST["duchod"];
@@ -196,15 +265,24 @@
         $otazka7 = $_POST["greendeal"];
         $otazka8 = $_POST["zpoplatneni_vs"];
         $otazka9 = $_POST["V4"];
-        
+        $otazka10 = $_POST["auto"];
+        $otazka11 = $_POST["rusko"];
+        $otazka12 = $_POST["ukrajina"];
+        $otazka13 = $_POST["migranti"];
+        $otazka14 = $_POST["prezident"];
+        $otazka15 = $_POST["socialismus"];
+        $otazka16 = $_POST["okamura"];
+    
         // Vytvořit politiky
-        $Babis = new Politik("babiš", "Ano", 60, new Otazky("ano", "ano", "ano", "ne", "ne", "ne", "ne", "ne", "ano"));
-        $Okamura = new Politik("tomio", "SPD", 40, new Otazky("ne", "ne", "ano", "ne", "ne", "ne", "ne", "ne", "ano"));
-        $Bartos = new Politik("Bartoš", "Piráti", 40, new Otazky("ano", "ano", "ne", "ano", "ano", "ano", "ano", "ne", "ne"));
-        $seznam = [$Babis, $Okamura, $Bartos];
+        $Babis = new Politik("babiš", "ANO", 60, new Otazky("ano", "ano", "ano", "ne", "ne", "ne", "ne", "ne", "ano", "ne", "ano","ne", "ne", "ne", "ne"));
+        $Okamura = new Politik("tomio", "SPD", 40, new Otazky("ne", "ne", "ano", "ne", "ne", "ne", "ne", "ne", "ano", "ne", "ano","ne", "ne", "ne", "ano"));
+        $Bartos = new Politik("Bartoš", "Piráti", 40, new Otazky("ano", "ano", "ne", "ano", "ano", "ano", "ano", "ne", "ne", "ano", "ne","ano", "ne", "ano", "ne"));
+        $Fiala = new Politik("Fiala", "ODS", 40, new Otazky("ano", "ano", "ne", "ano", "ano", "ano", "ano", "ne", "ne", "ano", "ne","ano", "ne", "ano", "ne"));
+        $pekarova = new Politik("Pekarová", "TOP-09", 40, new Otazky("ano", "ano", "ne", "ano", "ano", "ano", "ano", "ne", "ne", "ano", "ne","ano", "ano", "ano", "ne"));
+        $seznam = [$Babis, $Okamura, $Bartos, $Fiala, $pekarova];
         
         // Vytvořit instanci člověka
-        $clovek_A = new Clovek("jirka", 40, new Otazky($otazka1, $otazka2, $otazka3, $otazka4, $otazka5, $otazka6, $otazka7, $otazka8, $otazka9));
+        $clovek_A = new Clovek("jirka", 40, new Otazky($otazka1, $otazka2, $otazka3, $otazka4, $otazka5, $otazka6, $otazka7, $otazka8, $otazka9, $otazka10, $otazka11, $otazka12, $otazka13, $otazka14, $otazka15, $otazka16));
         
         // Porovnat s politiky
         $clovek_A->porovnat_s_politikem2($seznam);

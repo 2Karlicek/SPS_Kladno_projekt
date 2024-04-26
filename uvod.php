@@ -17,15 +17,14 @@ $volby = array(
   array("text" => "Do Kraje", "odkaz" => "electioncalculator.php","datum" =>new DateTime('2026-06-01')),
   array("text" => "Prezidentské", "odkaz" => "electioncalculator.php","datum" =>new DateTime('2028-06-01')),
   array("text" => "Komunální", "odkaz" => "electioncalculator.php", "datum" =>new DateTime('2025-06-01')),
-  array("text" => "Do Europarlamentu", "odkaz" => "electioncalculator.php", "datum" =>new DateTime('2027-06-01')),
+  array("text" => "Do Europarlamentu", "odkaz" => "electioncalculator.php", "datum" =>new DateTime('2024-06-01')),
 );
+
+
 $timenow = new DateTime();
 $actual = array();
 
-echo $volby[0]["datum"]->format('Y-m-d');
-echo"<br>";
-echo $timenow->format('Y-m-d');
-echo"<br>";
+
 
 
 foreach ($volby as $vol){
@@ -33,9 +32,7 @@ foreach ($volby as $vol){
   $pocet_mesicu = ($rozdil->y * 12) + $rozdil->m;
   if ($pocet_mesicu < 6) {
     array_push($actual, $vol);
-  } else {
-      echo "neni";
-  }
+  } 
 }
 // Porovnej, zda je rozdíl menší než 1 měsíc
 
@@ -177,9 +174,9 @@ foreach ($volby as $vol){
                   </ul>
                 </div>
               </li>
-              <li><a class="nav-link" href="/">Jobs</a></li>
-              <li><a class="nav-link" href="/">Livestream</a></li>
-              <li><a class="nav-link" href="/">About</a></li>
+              <li><a class="nav-link" href="election_calculator.php">Kalkulačka</a></li>
+              <li><a class="nav-link" href="/">Výsledky</a></li>
+              <li><a class="nav-link" href="/">O projektu</a></li>
             </ul>
           </nav>
         </div>

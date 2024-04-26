@@ -33,10 +33,10 @@ session_start()
     if (isset($_POST["submit"])) {
 
           try {
-          $servername = "localhost";
-          $username = "root";
-          $password = "";
-          $dbname = "logins";
+            $servername = "dbs.spskladno.cz";
+            $username = "student12";
+            $password = "spsnet";
+            $dbname = "vyuka12";
 
           $conn = new mysqli($servername, $username, $password, $dbname);
           }catch(Exception $e){
@@ -55,7 +55,7 @@ session_start()
           $password2 = $_POST['password'];
 
           // Ověření uživatelského jména a hesla v databázi
-          $sql = "SELECT * FROM uzivatele WHERE username='$username2' AND heslo='$password2'";
+          $sql = "SELECT * FROM ucastnici WHERE username='$username2' AND heslo='$password2'";
           $result = $conn->query($sql);
           
 

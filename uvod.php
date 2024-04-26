@@ -87,9 +87,9 @@ foreach ($volby as $vol){
                         <img src="./assets/icons/babis_icon.jpg" class="icon" />
                         <div>
                           <span class="dropdown-link-title"
-                            >Andrej Babiš</span
+                            ><a gref=babiš.php>Andrej Babiš</a></span
                           >
-                          <p>Zjistěte víc o Andrej Babiš</p>
+                          <p>Zjisti více o Andrejovi</p>
                         </div>
                       </a>
                     </li>
@@ -195,7 +195,7 @@ foreach ($volby as $vol){
                 alt="user image"
               />
             </a>
-            <button class="btn btn-primary">Create</button>
+            <button class="btn btn-primary" onclick="window.location.href='login.php'">Login</button>
           </div>
 
           <button

@@ -1,0 +1,44 @@
+body{
+    background-color: #F1FAFF;
+}
+
+  .nadpis {
+    background-color: blue;
+    color: #ffffff;
+    padding: 15px;
+  }
+  .poslanci_karticka{
+    width: 10%;
+    height: auto;
+    float: left;
+    display: inline;
+    height:225px;
+    margin-top: 100px;
+    text-align: center;
+    background-color: #F1FAFF;
+    border-radius: 30px;
+    overflow: hidden;
+  }
+  
+  .poslanci_karticky{
+    width: 10%;
+    height: auto;
+    float: left;
+    display: inline;
+    margin-right: 5%;
+    height:225px;
+    margin-top: 100px;
+    text-align: center;
+    background-color: #F1FAFF;
+    border-radius: 30px;
+    overflow: hidden;
+  }
+  img{
+    width: 100%;
+    opacity: 0.9;
+  }
+  img:hover{
+    border: 2px solid transparent;
+    cursor: pointer; 
+    opacity: 1.0;
+  }

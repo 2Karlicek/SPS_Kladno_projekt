@@ -59,15 +59,16 @@
 </head>
 <body>
     <div class="container">
-        <h1>Toto je stránka o Andreji Babišovi</h1>
+        <h1>Toto je stránka o Ivanu Bartošovi</h1>
         <p>Bývalý akcionář agrofetu(akrofert nijak nepotporuje a nezasahuje do politika pana Andreje Babiše)</p>
         <p>Bývalý akcionář agrofertu Andrej Babišů stoji ve vládě sám proti elitám</p>
        
         
-        <img src=praha-rozhovor-babis-2020-04.jpg alt="Bývalý akcionář agroferu">
-        <p> „My se jednou asi z té demokracie poděláme, všichni. Jak jinak totiž vysvětlit to, že se tu k dálnici vyjadřuje i jezevec, ekologický terorista a taky každý starosta chce mít výjezd.“
+        <img src=DAV65b456d47c_Ivan_Bartos.jpg alt="Bývalý akcionář agroferu">
+        <p> „Dredy jsou pohodlné, nerozmotávají se, naopak se domotávají.
 
-Zdroj: https://citaty.net/autori/andrej-babis/ </p>
+Zdroj: https://citaty.net/citaty/2059290-ivan-bartos-dredy-jsou-pohodlne-nerozmotavaji-se-naopak-se-d/.“
+ </p>
     </div>
 
 

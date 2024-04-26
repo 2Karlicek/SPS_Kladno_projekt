@@ -66,6 +66,11 @@ button {
 
 #nav-menu {
   border-bottom: var(--border);
+  margin-bottom: 100px;
+  z-index: 1;
+  position: fixed;
+  width: 100%;
+  background-color: white;
 }
 
 .container {

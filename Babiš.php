@@ -9,8 +9,7 @@
 
 
             font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
+            
             background-color: #FF5733; /* Začíná s oranžovou barvou */
             animation: changeColor 5s linear infinite; /* Animace trvá 10 sekund, opakuje se nekonečně */
         }
@@ -33,13 +32,17 @@
             }
         }
         
-        .container {
+        .containers {
             max-width: 800px;
             margin: 20px auto;
+            margin-top: 20px;
             padding: 20px;
-            background-color:white;
+            background-color: white;
             border-radius: 8px;
             box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            z-index: 0;
+            position: relative;
+            margin-top: 75px;
         }
         h1 {
             color: #333;
@@ -55,10 +58,20 @@
             border-radius: 8px;
             box-shadow: 0 0 10px rgba(0,0,0,0.1);
         }
+
+
     </style>
 </head>
 <body>
-    <div class="container">
+
+    <?php
+        include "uvod.php"
+
+
+    ?>
+    <br>
+
+    <div class="containers">
         <h1>Toto je stránka o Andreji Babiši</h1>
         <p>Bývalý akcionář agrofetu(akrofert nijak nepotporuje a nezasahuje do politika pana Andreje Babiše)</p>
         <p>Bývalý akcionář agrofertu Andrej Babišů stoji ve vládě sám proti elitám</p>

@@ -58,6 +58,10 @@
     </style>
 </head>
 <body>
+    <?php
+        include "ponk.php";
+
+?>
     <div class="container">
         <h1>Toto je stránka o Andreji Babišovi</h1>
         <p>Bývalý akcionář agrofetu(akrofert nijak nepotporuje a nezasahuje do politika pana Andreje Babiše)</p>

@@ -40,3 +40,9 @@ button {
   pointer-events: all;
 }
 
+#photo {
+  position: absolute;
+  
+  display: none;
+}
+

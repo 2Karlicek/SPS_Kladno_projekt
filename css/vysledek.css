@@ -5,3 +5,9 @@ body {
 main{
     text-align: center;
 }
+
+#photo {
+    position: absolute;
+    
+    display: none;
+}

@@ -1,6 +1,12 @@
 /* style.css */
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700&display=swap");
 
+
+#photo {
+  position: absolute;
+  
+  display: none;
+}
 * {
   margin: 0;
   padding: 0;

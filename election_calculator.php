@@ -13,7 +13,10 @@ session_start();
   <link rel="stylesheet" href="css/styly.css">
 </head>
 <body>
+<?php
+        include "ponk.php";
 
+?>
 <div class="container">
     <h2>Volební kalkulačka</h2>
     <form action="election_calculator.php" method="post" class="myform">

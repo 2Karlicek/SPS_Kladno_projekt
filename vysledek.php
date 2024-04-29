@@ -2,13 +2,20 @@
 session_start();
 $_tomio = "assets/images/tomio_vysledek.png";
 $babis = "assets/images/babis.png";
+$bartos = "assets/images/bartos.png";
 
 $img = "";
-
-if ($_SESSION["vysledek"]=="ANO"){
-    $img = $babis;
-}
-else{
+if (isset($_SESSION["vysledek"]) && $_SESSION["vysledek"] !== null) {
+    if ($_SESSION["vysledek"]=="ANO"){
+        $img = $babis;
+    }
+    if ($_SESSION["vysledek"]=="SPD"){
+        $img = "assets/images/tomio_vysledek.png";
+    }
+    else{
+        $img = "assets/images/tomio_vysledek.png";
+    }
+}else{
     $img = "assets/images/tomio_vysledek.png";
 }
 ?>

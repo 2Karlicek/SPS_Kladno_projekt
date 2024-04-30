@@ -64,8 +64,8 @@
 ?>
     <div class="container">
         <h1>Toto je stránka o Ivanu Bartošovi</h1>
-        <p>Bývalý akcionář agrofetu(akrofert nijak nepotporuje a nezasahuje do politika pana Andreje Babiše)</p>
-        <p>Bývalý akcionář agrofertu Andrej Babišů stoji ve vládě sám proti elitám</p>
+        <p>Místo předseda vlády Petra Fialy za digitalizaci.</p>
+        <p>Předseda strany Piráti a poslanec poslanecké sněmovny PČR. </p>
        
         
         <img src=assets/images/DAV65b456d47c_Ivan_Bartos.jpg alt="Bývalý akcionář agroferu">

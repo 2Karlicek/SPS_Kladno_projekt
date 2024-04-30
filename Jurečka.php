@@ -67,8 +67,7 @@
         <img src=assets/images/Jurecka-1-1.jpg alt="Bývalý akcionář agroferu">
         <p> „Nechci další roky prožvanit, volič není hloupý."
 
-Zdroj: https://citaty.net/citaty/2054894-marian-jurecka-nechci-dalsi-roky-prozvanit-volic-neni-hloupy/“
-</p>
+Zdroj: https://citaty.net/citaty/2054894-marian-jurecka-nechci-dalsi-roky-prozvanit-volic-neni-hloupy/“</p>
     </div>
 
 

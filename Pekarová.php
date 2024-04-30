@@ -60,14 +60,15 @@
 <body>
     <div class="container">
         <h1>Toto je stránka o Markétě Pekarové Adamové</h1>
-        <p>Bývalý akcionář agrofetu(akrofert nijak nepotporuje a nezasahuje do politika pana Andreje Babiše)</p>
-        <p>Bývalý akcionář agrofertu Andrej Babišů stoji ve vládě sám proti elitám</p>
+        <p>Šéfka poslanecké sněmovny PČR.</p>
+        <p>4. přesedkyně strany TOP 09.</p>
        
         
         <img src=assets/images/Markéta_Pekarová_Adamová_(2022).jpg alt="Bývalý akcionář agroferu">
-        <p> „My se jednou asi z té demokracie poděláme, všichni. Jak jinak totiž vysvětlit to, že se tu k dálnici vyjadřuje i jezevec, ekologický terorista a taky každý starosta chce mít výjezd.“
+        <p> „Někdo to nahrává ten hlas? Huawei jo? To fakt? To nevím, jestli je dobrý teda. Nemáte na iPhone?“
 
-Zdroj: https://citaty.net/autori/andrej-babis/ </p>
+Zdroj: https://www.extra.cz/zpravy-to-nemate-na-iphone-marketa-pekarova-adamova-se-tvrde-oprela-do-huawei-3b50b“
+        </p>
     </div>
 
 

@@ -68,7 +68,7 @@
         <p>Bývalý akcionář agrofertu Andrej Babišů stoji ve vládě sám proti elitám</p>
        
         
-        <img src=assets/images/02608527.jpg="Bývalý akcionář agroferu">
+        <img src="assets/images/02608527.jpg="Bývalý akcionář agroferu">
         <p> „My se jednou asi z té demokracie poděláme, všichni. Jak jinak totiž vysvětlit to, že se tu k dálnici vyjadřuje i jezevec, ekologický terorista a taky každý starosta chce mít výjezd.“
 
 Zdroj: https://citaty.net/autori/andrej-babis/ </p>

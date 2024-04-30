@@ -195,15 +195,12 @@ foreach ($volby as $vol){
               />
             </a>
             <?php
-  // Zkontrolujte, zda je uživatel přihlášen
-  if (isset($_SESSION['logged_in']) && $_SESSION['logged_in'] === true) {
-      // Pokud je přihlášen, zobrazíme tlačítko "Logout"
-      echo '<button class="btn btn-primary" onclick="window.location.href=\'logout.php\'">Logout</button>';
-  } else {
-      // Pokud není přihlášen, zobrazíme tlačítko "Login"
-      echo '<button class="btn btn-primary" onclick="window.location.href=\'login.php\'">Login</button>';
-  }
-  ?>
+                if (isset($_SESSION['logged_in']) && $_SESSION['logged_in'] === true) {
+               echo '<button class="btn btn-primary" onclick="window.location.href=\'logout.php\'">Logout</button>';
+            } else {
+               echo '<button class="btn btn-primary" onclick="window.location.href=\'login.php\'">Login</button>';
+               }
+              ?>
           </div>
 
           <button

@@ -175,8 +175,7 @@ foreach ($volby as $vol){
               <li><a class="nav-link" href="election_calculator.php">Kalkulačka</a></li>
               <li><a class="nav-link" href="/">Výsledky</a></li>
               <li><a class="nav-link" href="/">O projektu</a></li>
-              <li><a class="nav-link" href="logout.php">Logout</a></li>
-            </ul>
+              </ul>
           </nav>
         </div>
         <div class="nav-end">

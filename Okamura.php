@@ -64,7 +64,7 @@
         <p>Bývalý akcionář agrofertu Andrej Babišů stoji ve vládě sám proti elitám</p>
        
         
-        <img src=assets/images/IIOKd.jpg="Bývalý akcionář agroferu">
+        <img src="assets/images/IIOKd.jpg" Bývalý akcionář agroferu">
         <p> „Každý další koupený kebab je o krok blíže k burkám.“
 
 Zdroj: https://citaty.net/autori/andrej-babis/ </p>

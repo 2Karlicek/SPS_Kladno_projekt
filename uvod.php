@@ -1,13 +1,6 @@
 
 <?php
 session_start();
-
-if(isset($_SESSION['logged_in']) && $_SESSION['logged_in'] === true) {
-    echo "Přihlášen";
-} else {
-    
-    echo "Nejste přihlášený";
-}
 ?>
 
 
@@ -201,7 +194,16 @@ foreach ($volby as $vol){
                 alt="user image"
               />
             </a>
-            <button class="btn btn-primary" onclick="window.location.href='login.php'">Login</button>
+            <?php
+  // Zkontrolujte, zda je uživatel přihlášen
+  if (isset($_SESSION['logged_in']) && $_SESSION['logged_in'] === true) {
+      // Pokud je přihlášen, zobrazíme tlačítko "Logout"
+      echo '<button class="btn btn-primary" onclick="window.location.href=\'logout.php\'">Logout</button>';
+  } else {
+      // Pokud není přihlášen, zobrazíme tlačítko "Login"
+      echo '<button class="btn btn-primary" onclick="window.location.href=\'login.php\'">Login</button>';
+  }
+  ?>
           </div>
 
           <button

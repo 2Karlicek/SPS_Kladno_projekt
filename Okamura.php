@@ -67,7 +67,7 @@
         <img src="assets/images/IIOKd.jpg" Bývalý akcionář agroferu">
         <p> „Každý další koupený kebab je o krok blíže k burkám.“
 
-Zdroj: https://citaty.net/autori/andrej-babis/ </p>
+Zdroj: https://citaty.net/autori/tomio-okamura/ </p>
     </div>
 
 

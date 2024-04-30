@@ -60,8 +60,8 @@
 <body>
     <div class="container">
         <h1>Toto je stránka o Tomio Okamurovi</h1>
-        <p>Bývalý akcionář agrofetu(akrofert nijak nepotporuje a nezasahuje do politika pana Andreje Babiše)</p>
-        <p>Bývalý akcionář agrofertu Andrej Babišů stoji ve vládě sám proti elitám</p>
+        <p>1. předseda nejlepší České strany SPD.</p>
+        <p>Držitel ocenění Bludný balvan.</p>
        
         
         <img src="assets/images/IIOKd.jpg" Bývalý akcionář agroferu">

@@ -64,14 +64,15 @@
 ?>
     <div class="container">
         <h1>Toto je stránka o Petru Fialovi</h1>
-        <p>Bývalý akcionář agrofetu(akrofert nijak nepotporuje a nezasahuje do politika pana Andreje Babiše)</p>
-        <p>Bývalý akcionář agrofertu Andrej Babišů stoji ve vládě sám proti elitám</p>
+        <p>13. předseda vlády České Republiky.</p>
+        <p>Bývalý rektor a prorektor Masarykovy Univerzity.</p>
        
         
         <img src=assets/images/xmDvz.jpg alt="Bývalý akcionář agroferu">
-        <p> „My se jednou asi z té demokracie poděláme, všichni. Jak jinak totiž vysvětlit to, že se tu k dálnici vyjadřuje i jezevec, ekologický terorista a taky každý starosta chce mít výjezd.“
+        <p> „„Člověk má dělat věci, kterým věří a které jsou správné.“
 
-Zdroj: https://citaty.net/autori/andrej-babis/ </p>
+Zdroj: https://citaty.net/autori/petr-fiala/“
+
     </div>
 
 

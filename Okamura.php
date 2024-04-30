@@ -75,4 +75,8 @@ Zdroj: https://citaty.net/autori/andrej-babis/ </p>
 
   
 </body>
+<?php
+        include "ponk.php";
+
+?>
 </html>

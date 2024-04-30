@@ -9,7 +9,6 @@ body{
   }
   .poslanci_karticka{
     width: 10%;
-    height: auto;
     float: left;
     display: inline;
     height:225px;
@@ -22,7 +21,6 @@ body{
   
   .poslanci_karticky{
     width: 10%;
-    height: auto;
     float: left;
     display: inline;
     margin-right: 5%;

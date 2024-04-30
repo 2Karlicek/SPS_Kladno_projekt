@@ -68,7 +68,7 @@
         <p>Bývalý akcionář agrofertu Andrej Babišů stoji ve vládě sám proti elitám</p>
        
         
-        <img src=DAV65b456d47c_Ivan_Bartos.jpg alt="Bývalý akcionář agroferu">
+        <img src=assets/images/DAV65b456d47c_Ivan_Bartos.jpg alt="Bývalý akcionář agroferu">
         <p> „Dredy jsou pohodlné, nerozmotávají se, naopak se domotávají.
 
 Zdroj: https://citaty.net/citaty/2059290-ivan-bartos-dredy-jsou-pohodlne-nerozmotavaji-se-naopak-se-d/.“

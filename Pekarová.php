@@ -67,8 +67,7 @@
         <img src=assets/images/Markéta_Pekarová_Adamová_(2022).jpg alt="Bývalý akcionář agroferu">
         <p> „Někdo to nahrává ten hlas? Huawei jo? To fakt? To nevím, jestli je dobrý teda. Nemáte na iPhone?“
 
-Zdroj: https://www.extra.cz/zpravy-to-nemate-na-iphone-marketa-pekarova-adamova-se-tvrde-oprela-do-huawei-3b50b“
-        </p>
+Zdroj: https://www.extra.cz/zpravy-to-nemate-na-iphone-marketa-pekarova-adamova-se-tvrde-oprela-do-huawei-3b50b“</p>
     </div>
 
 

@@ -60,12 +60,12 @@
 <body>
     <div class="container">
         <h1>Toto je stránka o Marianu Jurečkovi</h1>
-        <p>Bývalý akcionář agrofetu(akrofert nijak nepotporuje a nezasahuje do politika pana Andreje Babiše)</p>
-        <p>Bývalý akcionář agrofertu Andrej Babišů stoji ve vládě sám proti elitám</p>
+        <p>Ministr práce a sociálních věcí ČR.</p>
+        <p>Předseda politikého hnutí KDU-ČSL.</p>
        
         
         <img src=assets/images/Jurecka-1-1.jpg alt="Bývalý akcionář agroferu">
-        <p> „Nechci další roky prožvanit, volič není hloupý.
+        <p> „Nechci další roky prožvanit, volič není hloupý."
 
 Zdroj: https://citaty.net/citaty/2054894-marian-jurecka-nechci-dalsi-roky-prozvanit-volic-neni-hloupy/“
 </p>

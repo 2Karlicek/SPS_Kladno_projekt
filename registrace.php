@@ -110,6 +110,7 @@
             <option value="Mirrorgender">Mirrorgender</option>
             <option value="Omnigender">Omnigender</option>
             <option value="Transgender">Transgender</option>
+            <option value="croissant">Croissant</option>
         </select>
       </div>
       <div class="form-group">
@@ -160,11 +161,12 @@
       echo "heslo" . $heslo . "<br>";
       echo "Bydliště: " . $bydliste . "<br>";
       echo "Pohlaví: " . $pohlavi . "<br>";
-      echo "kod: " . $code . "<br>";
+      echo "<span style='font-size: 35px;'>kód pro potvrzení registrace: $code</span><br>";
 
-      sleep(5);
 
-      echo "<script>setTimeout(function(){ window.location.href = 'verifyemail.php'; }, 5000);</script>";
+      sleep(2);
+
+      echo "<script>setTimeout(function(){ window.location.href = 'verifyemail.php'; }, 9000);</script>";
     }
     else{
       echo "hesla se neshodují";

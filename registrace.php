@@ -126,8 +126,13 @@
     <div>
 </div>
       <div>
-      <button onclick="window.location.href='login.php'">Login</button>
-      </div>
+        <br>
+          <button onclick="window.location.href='login.php'">Login</button>
+        </br>
+        <bt>
+          <button onclick="window.location.href='uvod.php'">Úvod</button>
+        </br>
+        </div>
     <?php
   if (isset($_POST["submit"])) {
     // Zde zpracujeme data z formuláře

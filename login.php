@@ -28,12 +28,14 @@ session_start()
       <button type="submit" name="submit">Přihlásit</button>
     </form>
     <div>
+</div> 
+      <br>
+        <button onclick="window.location.href='registrace.php'">Registrace</button>
+      </br>
+      <br>
+        <button onclick="window.location.href='uvod.php'">Úvod</button>
+      </br>
 </div>
-    <div>
-    <button onclick="window.location.href='registrace.php'">Registrace</button>
-</div>
-
-  </div>
   
   <?php
     if (isset($_POST["submit"])) {
@@ -54,7 +56,9 @@ session_start()
             $conn = new mysqli($servername, $username, $password, $dbname);
           }
 
-          
+          // Přihlášení úspěšné, uložení informace do session
+          $_SESSION['logged_in'] = true;
+
 
 
           $username2 = $_POST['username'];
@@ -74,14 +78,7 @@ session_start()
               // Přihlášení selhalo, zobrazení chybové zprávy
               echo "Nesprávné uživatelské jméno nebo heslo.";
           }
-
           $conn->close();
-
     }
-
-
-
   ?>
-
-
 </body>

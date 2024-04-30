@@ -64,8 +64,8 @@
 ?>
     <div class="container">
         <h1>Toto je stránka o Andreji Babišovi</h1>
-        <p>Bývalý akcionář agrofetu(akrofert nijak nepotporuje a nezasahuje do politika pana Andreje Babiše)</p>
-        <p>Bývalý akcionář agrofertu Andrej Babišů stoji ve vládě sám proti elitám</p>
+        <p>Bývalý akcionář agrofertu (agrofert nijak nepodporuje a nezasahuje do politika pana Andreje Babiše).</p>
+        <p>Bývalý premiér České Republiky za stranu ANO.</p>
        
         
         <img src=assets/images/praha-rozhovor-babis-2020-04.jpg alt="Bývalý akcionář agroferu">

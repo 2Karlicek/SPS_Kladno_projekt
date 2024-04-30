@@ -64,14 +64,14 @@
 ?>
     <div class="container">
         <h1>Toto je stránka o Vojtěchu Filipovi</h1>
-        <p>Bývalý akcionář agrofetu(akrofert nijak nepotporuje a nezasahuje do politika pana Andreje Babiše)</p>
-        <p>Bývalý akcionář agrofertu Andrej Babišů stoji ve vládě sám proti elitám</p>
+        <p>Bývalý pracovník StB.</p>
+        <p>Předseda Česko-činské smíšené obchodní a průmyslové komory.</p>
        
         
         <img src="assets/images/02608527.jpg" Bývalý akcionář agroferu">
-        <p> „My se jednou asi z té demokracie poděláme, všichni. Jak jinak totiž vysvětlit to, že se tu k dálnici vyjadřuje i jezevec, ekologický terorista a taky každý starosta chce mít výjezd.“
+        <p> „Brežněv byl z Ukrajiny.“
 
-Zdroj: https://citaty.net/autori/andrej-babis/ </p>
+Zdroj: https://www.ceske-volby.cz/nejlepsi-citaty-slavnych-politiku/#Vojtech_Filip </p>
     </div>
 
 

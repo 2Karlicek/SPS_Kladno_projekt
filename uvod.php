@@ -8,16 +8,16 @@ $stranky = array(
     array("nazev" => "Pirati", "obrazek" => "./assets/icons/figma.svg", "odkaz" => "pirati.php"),
     array("nazev" => "KSČM", "obrazek" => "./assets/icons/xd.svg", "odkaz" => "kscm.php"),
     array("nazev" => "KDU-ČSL", "obrazek" => "./assets/icons/ae.svg", "odkaz" => "kducsl.php"),
-    // Další stránky
 );
 
 $volby = array(
-  array("text" => "Do senátu", "odkaz" => "electioncalculator.php", "datum" =>new DateTime('2024-04-01')),
-  array("text" => "Do poslanecké sněmovny", "odkaz" => "electioncalculator.php","datum" =>new DateTime('2026-06-01')),
-  array("text" => "Do Kraje", "odkaz" => "electioncalculator.php","datum" =>new DateTime('2026-06-01')),
-  array("text" => "Prezidentské", "odkaz" => "electioncalculator.php","datum" =>new DateTime('2028-06-01')),
-  array("text" => "Komunální", "odkaz" => "electioncalculator.php", "datum" =>new DateTime('2025-06-01')),
-  array("text" => "Do Europarlamentu", "odkaz" => "electioncalculator.php", "datum" =>new DateTime('2024-06-01')),
+  array("text" => "Do senátu", "odkaz" => "election_calculator.php", "datum" =>new DateTime('2024-04-01')),
+  array("text" => "Do poslanecké sněmovny", "odkaz" => "election_calculator.php","datum" =>new DateTime('2026-06-01')),
+  array("text" => "Do Kraje", "odkaz" => "election_calculator.php","datum" =>new DateTime('2026-06-01')),
+  array("text" => "Prezidentské", "odkaz" => "election_calculator.php","datum" =>new DateTime('2028-06-01')),
+  array("text" => "Komunální", "odkaz" => "election_calculator.php", "datum" =>new DateTime('2025-06-01')),
+  array("text" => "Do Europarlamentu", "odkaz" => "election_calculator.php", "datum" =>new DateTime('2024-06-01')),
+
 );
 
 

@@ -1,5 +1,17 @@
 
 <?php
+session_start();
+
+if(isset($_SESSION['logged_in']) && $_SESSION['logged_in'] === true) {
+    echo "Přihlášen";
+} else {
+    
+    echo "Nejste přihlášený";
+}
+?>
+
+
+<?php
 // Definuj pole se stránkami, obrázky a odkazy
 $stranky = array(
     array("nazev" => "ANO", "obrazek" => "./assets/icons/xd.svg", "odkaz" => "ano.php"),
@@ -23,9 +35,6 @@ $volby = array(
 
 $timenow = new DateTime();
 $actual = array();
-
-
-
 
 foreach ($volby as $vol){
   $rozdil = $vol["datum"]->diff($timenow);
@@ -209,3 +218,4 @@ foreach ($volby as $vol){
     <script src="js/script.js"></script>
   </body>
 </html>
+<?php

@@ -7,7 +7,7 @@
     <style>
         #photo {
             position: absolute;
-            width: 20 %;
+            width: 20%;
             display: none;
         }
     </style>

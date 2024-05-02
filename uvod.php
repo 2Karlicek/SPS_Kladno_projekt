@@ -98,7 +98,7 @@ foreach ($volby as $vol){
                         <img src="./assets/icons/okamura_icon.jpg" class="icon" />
                         <div>
                           <span class="dropdown-link-title" onclick="window.location.href='Okamura.php'">Tomio Okamura</span>
-                          <a href="Okamura.php">Zjistěte víc o Ivanovi Bartošovi</a>
+                          <a href="Okamura.php">Zjistěte víc o Tomiu Okamurovi</a>
                         </div>
                       </a>
                     </li>
